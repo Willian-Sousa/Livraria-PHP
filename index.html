@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "_css/estilo.css">
+    <title>AOKI-LIVRARIA: Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">AOKI-LIVRARIA</a></h1>
+        <h2>Sistema de Controle de Acervo</h2>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Cadastro</li></a>
+                    <a href="lista.php"><li>Lista do Acervo</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="box">
+        <form method="POST" action="processa.php">
+            <h3>Cadastrar Novos Livros</h3>
+            <div class="campo">
+                <input type="text" maxlength="100" name="titulo" id="titulo" required>
+                <label>Título</label>
+            </div>
+            <div class="campo">
+                <input type="text" maxlength="60" name="nome_autor" id="autor" required>
+                <label>Autor</label>
+            </div>
+            <div class="campo">
+                <input type="text" name="ano" id="ano" required>
+                <label>Ano</label>
+            </div>
+            
+            <div class="campo">
+                <input type="text" maxlength="60" name="editora" id="editora" required>
+                <label>Editora</label>
+            </div>
+            
+            <div class="campo">
+                <input type="text" name="preco" id="preco" required>
+                <label>Preço</label>
+            </div>
+            <div class="campo">
+                <input type="text" name="qnt" id="qnatidade" required>
+                <label>Quantidade</label>
+            </div>
+            <div class="campo">
+                <input type="text" name="tipo" id="tipo" required>
+                <label>Tipo</label>
+            </div>
+            
+            <br><br>
+
+            <input id='btn' class="btn" type='submit' value='Salvar'>
+
+        </form>
+    </div> 
+    <footer>
+        <p>&copy; Aoki-Livraria: Todos os direitos reservados</p>
+    </footer>  
+    <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
